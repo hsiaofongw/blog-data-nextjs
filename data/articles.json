@@ -1,5 +1,23 @@
 [
     {
+        "name": "热更新测试1",
+        "file": "https://static.exploro.one/pdf/r-cjk-font-rendering1.pdf",
+        "date": "2021-03-07",
+        "description": "测试测试"
+    },
+    {
+        "name": "热更新测试2",
+        "file": "https://static.exploro.one/pdf/r-cjk-font-rendering2.pdf",
+        "date": "2021-03-07",
+        "description": "这是一篇测试文章"
+    },
+    {
+        "name": "热更新测试3",
+        "file": "https://static.exploro.one/pdf/r-cjk-font-rendering3.pdf",
+        "date": "2021-03-07",
+        "description": "echo echo"
+    },
+    {
         "name": "R软件绘图中文渲染解决方案",
         "file": "https://static.exploro.one/pdf/r-cjk-font-rendering.pdf",
         "date": "2021-03-07",
