@@ -1,0 +1,14 @@
+[
+    {
+        "name": "热更新测试1",
+        "file": "https://static.exploro.one/pdf/r-cjk-font-rendering1.pdf",
+        "date": "2021-03-07",
+        "description": "列出了两种常见的R软件中文绘图解决方案，解决了R软件用在mac操作系统下绘图时中文字体不能正常显示的问题．"
+    },
+    {
+        "name": "热更新测试2",
+        "date": "2021-03-05",
+        "file": "https://static.exploro.one/pdf/proxy-case-study-12.pdf",
+        "description": "通过一个NginX缓存配置案例分析缓存未能正常发挥作用的原因，介绍了RFC 7234，介绍了NginX缓存配置等．"
+    }
+]
