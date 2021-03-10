@@ -29,6 +29,17 @@ interface ICardData {
     dateVerifiedBy?: string;
 }
 
+interface ICommentData {
+
+    serialNumber: number;
+    replyTo: number;
+    email: string;
+    nickName: string;
+    website: string;
+    content: string;
+
+}
+
 interface IBlogBasicMetaData {
     title: string;
     description: string;
