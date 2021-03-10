@@ -1,5 +1,11 @@
 [
     {
+        "name": "nginx -s stop",
+        "file": "https://hsiaofong-public-read.oss-accelerate.aliyuncs.com/latexblog/nginx-stop.pdf",
+        "date": "2021-03-10",
+        "description": "标志着本站及其围绕着的一切项目系数顺利上云．"
+    },
+    {
         "name": "R软件绘图中文渲染解决方案",
         "file": "https://hsiaofong-public-read.oss-accelerate.aliyuncs.com/latexblog/r-cjk-font-rendering.pdf",
         "date": "2021-03-07",
