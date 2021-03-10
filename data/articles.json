@@ -18,12 +18,6 @@
         "description": "通过一个NginX缓存配置案例分析缓存未能正常发挥作用的原因，介绍了RFC 7234，介绍了NginX缓存配置等．"
     },
     {
-        "name": "用向量方法巧解初中几何题",
-        "date": "2021-02-21",
-        "file": "https://hsiaofong-public-read.oss-accelerate.aliyuncs.com/latexblog/geometry-vector-approach-1.pdf",
-        "description": "用向量的方法来解决初中试卷上的简单几何问题能使问题变得简单．"
-    },
-    {
         "name": "用 Celery 实现多台设备的协同工作",
         "date": "2021-02-19",
         "file": "https://hsiaofong-public-read.oss-accelerate.aliyuncs.com/latexblog/celery-intro.pdf",
