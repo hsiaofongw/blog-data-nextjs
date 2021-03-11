@@ -5,6 +5,16 @@
         "email": "i@beyondstars.xyz",
         "nickName": "Wayne",
         "website": "http://exploro.one",
-        "content": "这是一条测试评论"
+        "content": "这是一条测试评论",
+        "date": 0
+    },
+    {
+        "serialNumber": 2,
+        "replyTo": 0,
+        "email": "i@beyondstars.xyz",
+        "nickName": "Wayne",
+        "website": "http://exploro.one",
+        "content": "评论系统仍然在开发中",
+        "date": 0
     }
 ]

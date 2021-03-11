@@ -37,6 +37,7 @@ interface ICommentData {
     nickName: string;
     website: string;
     content: string;
+    date: number;
 
 }
 
