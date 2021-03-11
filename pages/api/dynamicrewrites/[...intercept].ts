@@ -44,7 +44,7 @@ async function requestToUpstream(url: string, req: NextApiRequest, res: NextApiR
     }
     else {
         res.setHeader('content-type', headers['content-type']);
-        res.setHeader('cache-control', headers['cache-control']);
+        res.setHeader('cache-control', 'public,max-age=259200');
         res.send(buffer);
     }
 
