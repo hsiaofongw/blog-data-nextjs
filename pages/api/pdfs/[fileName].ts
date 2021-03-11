@@ -17,7 +17,7 @@ async function requestHandler(req: NextApiRequest, res: NextApiResponse) {
     const cacheSeconds = cacheDays * 24 * 60 * 60;
 
     res.setHeader('Content-Type', 'application/pdf');
-    // res.setHeader('Cache-Control', `public,max-age=${cacheSeconds}`);
+    res.setHeader('Cache-Control', `public,max-age=${cacheSeconds}`);
     res.status(200).send(resource);
 }
 
