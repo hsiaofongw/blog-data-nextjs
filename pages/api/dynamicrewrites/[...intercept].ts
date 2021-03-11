@@ -44,6 +44,7 @@ async function requestToUpstream(url: string, req: NextApiRequest, res: NextApiR
     }
     else {
         res.setHeader('content-type', headers['content-type']);
+        res.setHeader('cache-control', headers['cache-control']);
         res.send(buffer);
     }
 
