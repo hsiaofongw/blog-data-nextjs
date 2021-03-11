@@ -1,9 +1,9 @@
 import { NextApiRequest, NextApiResponse } from 'next'
-import abouts from '../../data/abouts.json';
+import { getAbouts } from '../../helpers/dtos';
 
 async function requestHandler(req: NextApiRequest, res: NextApiResponse<IPostExcerptData[]>) {
 
-    const data = abouts as IPostExcerptData[];
+    const data = await getAbouts() as IPostExcerptData[];
 
     res.status(200).json(data);
 }

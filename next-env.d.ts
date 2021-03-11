@@ -48,3 +48,7 @@ interface IBlogBasicMetaData {
     avatar?: string;
     menu: ILinkData[];
 }
+
+interface IRewriteRules {
+    [key: string]: string;
+}
