@@ -1,5 +1,4 @@
 [
-
     {
         "name": "nginx -s stop",
         "file": "https://blog-data-nextjs.vercel.app/api/pdfs/nginx-stop.pdf",
