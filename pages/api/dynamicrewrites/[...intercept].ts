@@ -37,7 +37,6 @@ async function requestToUpstream(url: string, req: NextApiRequest, res: NextApiR
     let text = await response.text();
 
     if (headers['content-type'] === 'text/html; charset=utf-8') {
-        console.log("substituting");
         text = text.replace(/href="\//g, 'href="');
         text = text.replace(/src="\//g, 'src="');
         res.send(text);

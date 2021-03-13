@@ -11,19 +11,25 @@ export async function getPosts(): Promise<IPostExcerptData[]> {
             ;
         }
         else {
+            const matchForMarkdownSite = /^https:\/\/markdown\-blog\-phi\.vercel\.app\/posts\/(?<articleName>[\w\d\-]+)$/g;
             const matchForOldSite = /^https:\/\/beyondstars\.xyz\/posts\/(?<articleName>[\w\d\-]+)\/$/g;
             const matchForNewSite = /\/(?<articleName>[\w\d\-]+)\.pdf$/g;
+            const markdownSiteMatchResult = matchForMarkdownSite.exec(fileName);
             const oldSiteMatchResult = matchForOldSite.exec(fileName);
             const newSiteMatchResult = matchForNewSite.exec(fileName);
 
-            let articleName = 'unMatch';
+            let articleName = '';
+
+            if (markdownSiteMatchResult) {
+                articleName = markdownSiteMatchResult?.groups?.articleName || 'unMatch-404';
+            }
 
             if (oldSiteMatchResult) {
-                articleName = oldSiteMatchResult.groups.articleName;
+                articleName = oldSiteMatchResult?.groups?.articleName || 'unMatch-404';
             }
 
             if (newSiteMatchResult) {
-                articleName = newSiteMatchResult.groups.articleName;
+                articleName = newSiteMatchResult?.groups?.articleName || 'unMatch-404';
             }
 
             p['prettyPath'] = `/posts/${articleName}`;
