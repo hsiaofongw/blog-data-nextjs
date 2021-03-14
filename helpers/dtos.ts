@@ -11,28 +11,15 @@ export async function getPosts(): Promise<IPostExcerptData[]> {
             ;
         }
         else {
-            const matchForMarkdownSite = /^https:\/\/markdown\-blog\-phi\.vercel\.app\/posts\/(?<articleName>[\w\d\-]+)$/g;
-            const matchForOldSite = /^https:\/\/beyondstars\.xyz\/posts\/(?<articleName>[\w\d\-]+)\/$/g;
-            const matchForNewSite = /\/(?<articleName>[\w\d\-]+)\.pdf$/g;
-            const markdownSiteMatchResult = matchForMarkdownSite.exec(fileName);
-            const oldSiteMatchResult = matchForOldSite.exec(fileName);
-            const newSiteMatchResult = matchForNewSite.exec(fileName);
+            const pdfRegex = /\/(?<postId>[\w\d\-]+)\.pdf$/g;
+            const markdownRegex = /markdown-blog-phi\.vercel\.app\/posts\/(?<postId>[\w\d\-]+)$/g;
 
-            let articleName = '';
+            const matchForPDf= pdfRegex.exec(fileName);
+            const matchForMarkdown = markdownRegex.exec(fileName);
 
-            if (markdownSiteMatchResult) {
-                articleName = markdownSiteMatchResult?.groups?.articleName || 'unMatch-404';
-            }
+            const postId = matchForPDf?.groups?.postId || matchForMarkdown?.groups?.postId || "unMatch";
 
-            if (oldSiteMatchResult) {
-                articleName = oldSiteMatchResult?.groups?.articleName || 'unMatch-404';
-            }
-
-            if (newSiteMatchResult) {
-                articleName = newSiteMatchResult?.groups?.articleName || 'unMatch-404';
-            }
-
-            p['prettyPath'] = `/posts/${articleName}`;
+            p['prettyPath'] = `/posts/${postId}`;
         }
     }
 

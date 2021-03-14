@@ -5,6 +5,12 @@ import got from 'got';
 let rules = {} as IRewriteRules;
 
 async function buildRewriteRules(): Promise<IRewriteRules> {
+
+    console.log({
+        "datetime": new Date().toISOString(),
+        "invoke": "buildRewriteRules"
+    });
+
     let rules = {};
 
     let posts = await getPosts();
@@ -28,123 +34,149 @@ async function buildRewriteRules(): Promise<IRewriteRules> {
     return rules;
 }
 
-async function requestToUpstream(url: string, req: NextApiRequest, res: NextApiResponse) {
-    const response = got(url);
+async function requestForText(url: string, req: NextApiRequest, res: NextApiResponse) {
 
-    const headers = (await response).headers;
+    console.log({
+        "datetime": new Date().toISOString(),
+        "invoke": "requestForText",
+        "url": url
+    });
 
-    let buffer = await response.buffer();
-    let text = await response.text();
+    let { headers, body } = await got(url, {
+        responseType: 'text'
+    }).catch(e => {
 
-    if (headers['content-type'] === 'text/html; charset=utf-8') {
-        text = text.replace(/href="\//g, 'href="');
-        text = text.replace(/src="\//g, 'src="');
-        res.send(text);
-    }
-    else {
-        res.setHeader('content-type', headers['content-type']);
-        res.setHeader('cache-control', 'public,max-age=259200');
-        res.send(buffer);
-    }
+        console.log({
+            "datetime": new Date().toISOString(),
+            "invoke": "requestForText",
+            "url": url,
+            "error": true,
+            "error.message": e.message || "",
+            "error.code": e.code || ""
+        });
 
+        return {
+            headers: {},
+            body: "404"
+        };
+    });
+
+    body = body.replace(/href="\//g, 'href="');
+    body = body.replace(/src="\//g, 'src="');
+    res.send(body);
 }
 
-async function rewriteForPosts(prettyPath: string, req: NextApiRequest, res: NextApiResponse) {
+async function requestForBinary(url: string, req: NextApiRequest, res: NextApiResponse) {
+
+    console.log({
+        "datetime": new Date().toISOString(),
+        "invoke": "requestForBinary",
+        "url": url
+    });
+
+    let { headers, body } = await got(url, {
+        responseType: 'buffer'
+    }).catch(e => {
+        console.log({
+            "datetime": new Date().toISOString(),
+            "invoke": "requestForBinary",
+            "url": url,
+            "error": true,
+            "error.message": e.message || "",
+            "error.code": e.code || ""
+        });
+
+        return {
+            headers: {},
+            body: "404"
+        };
+    });
+
+    res.setHeader('content-type', headers['content-type'] || "text/plain");
+    res.send(body);
+}
+
+async function rewriteForPost(prettyPath: string, req: NextApiRequest, res: NextApiResponse) {
+
+    console.log({
+        "datetime": new Date().toISOString(),
+        "invoke": "rewriteForPost",
+        "prettyPath": prettyPath,
+        "req.url": req.url,
+        "destination": rules[prettyPath] || ""
+    });
+
     if (Object.keys(rules).length === 0) {
         rules = await buildRewriteRules();
     }
 
-    let destination = "";
     if (prettyPath in rules) {
-        destination = rules[prettyPath];
-    }
+        const destination = rules[prettyPath];
 
-    const logObject = {
-        handler: "rewriteForPosts",
-        prettyPath: prettyPath,
-        destination: destination
-    };
-
-    for (const k in logObject) {
-        res.setHeader(`x-rewrites-debug-info-${k}`, logObject[k]);
-    }
-
-    await requestToUpstream(destination, req, res);
-}
-
-async function rewriteForAbouts(prettyPath: string, req: NextApiRequest, res: NextApiResponse) {
-    if (Object.keys(rules).length === 0) {
-        rules = await buildRewriteRules();
-    }
-
-    let destination = "";
-    if (prettyPath in rules) {
-        destination = rules[prettyPath];
-    }
-
-    const logObject = {
-        handler: "rewriteForAbouts",
-        prettyPath: prettyPath,
-        destination: destination
-    };
-
-    for (const k in logObject) {
-        res.setHeader(`x-rewrites-debug-info-${k}`, logObject[k]);
-    }
-
-    await requestToUpstream(destination, req, res);
-}
-
-async function rewriteForResources(resourceName: string, req: NextApiRequest, res: NextApiResponse) {
-    const oldSiteURL = "https://beyondstars.xyz";
-    const trueResourceURL = `${oldSiteURL}${resourceName}`;
-
-    const logObject = {
-        handler: "rewriteForResources",
-        resourceName: resourceName,
-        trueResourceURL: trueResourceURL
-    };
-
-    for (const k in logObject) {
-        res.setHeader(`x-rewrites-debug-info-${k}`, logObject[k]);
-    }
-
-    await requestToUpstream(trueResourceURL, req, res);
-}
-
-async function requestHandler(req: NextApiRequest, res: NextApiResponse) {
-
-    const matchForPostsPrettyPath = /(?<prettyPath>\/posts\/[\w\d\-]+)$/g;
-    const matchForAboutsPrettyPath = /(?<prettyPath>\/abouts\/[\w\d\-]+)$/g;
-    const matchForOldSiteResource = /\/posts(?<resourceName>\/.+\.[\w]{1,})$/g;
-
-    const postsMatchResult = matchForPostsPrettyPath.exec(req.url);
-    const aboutsMatchResult = matchForAboutsPrettyPath.exec(req.url);
-    const resourceMatchResult = matchForOldSiteResource.exec(req.url);
-    
-    if (postsMatchResult) {
-        if (postsMatchResult.groups) {
-            const prettyPath = postsMatchResult.groups.prettyPath;
-            await rewriteForPosts(prettyPath, req, res);
+        const pdfRegex = /\.pdf$/g;
+        const matchPDF = pdfRegex.exec(destination);
+        if (matchPDF) {
+            await requestForBinary(destination, req, res);
         }
-    }
-    else if (aboutsMatchResult) {
-        if (aboutsMatchResult.groups) {
-            const prettyPath = aboutsMatchResult.groups.prettyPath;
-            await rewriteForAbouts(prettyPath, req, res);
-        }
-    }
-    else if (resourceMatchResult) {
-        if (resourceMatchResult.groups) {
-            const resourceName = resourceMatchResult.groups.resourceName;
-            await rewriteForResources(resourceName, req, res);
+        else {
+            await requestForText(destination, req, res);
         }
     }
     else {
         res.status(404).json({
-            "msg": "Not Found!"
+            "msg": "No match post for this prettyPath",
+            "prettyPath": prettyPath
         });
     }
+}
+
+async function rewriteForResource(resourceName: string, req: NextApiRequest, res: NextApiResponse) {
+    const oldSiteURL = "https://markdown-blog-phi.vercel.app";
+    const trueResourceURL = `${oldSiteURL}${resourceName}`;
+
+    console.log({
+        "datetime": new Date().toISOString(),
+        "invoke": "rewriteForResource",
+        "resourceName": resourceName,
+        "req.url": req.url,
+        "trueResourceURL": trueResourceURL
+    });
+
+    await requestForBinary(trueResourceURL, req, res);
+}
+
+async function requestHandler(req: NextApiRequest, res: NextApiResponse) {
+
+    console.log({
+        "datetime": new Date().toISOString(),
+        "invoke": "requestHandler",
+        "req.url": req.url
+    });
+
+    const postRegex = /(?<prettyPath>\/(posts|abouts)\/[\w\d\-]+)$/g;
+    const matchPost = postRegex.exec(req?.url || "");
+    if (matchPost) {
+        const prettyPath = matchPost?.groups?.prettyPath || "";
+        if (prettyPath) {
+            await rewriteForPost(prettyPath, req, res);
+            return;
+        }
+    }
+
+    const resourceRegex = /\/.+\/(posts|abouts)(?<resourceName>\/.+\.\w+)$/g;
+    const matchResource = resourceRegex.exec(req?.url || "");
+    if (matchResource) {
+        const resourceName = matchResource?.groups?.resourceName || "";
+        if (resourceName) {
+            await rewriteForResource(resourceName, req, res);
+            return;
+        }
+    }
+
+    res.status(404).json({
+        "msg": "Not Found!",
+        "req.url": req.url
+    });
 }
 
 export default requestHandler;
