@@ -36,16 +36,15 @@ export async function getAbouts(): Promise<IPostExcerptData[]> {
             ;
         }
         else {
-            const matchForNewSite = /\/(?<articleName>[\w\d\-]+)\.pdf$/g;
-            const newSiteMatchResult = matchForNewSite.exec(fileName);
+            const pdfRegex = /\/(?<postId>[\w\d\-]+)\.pdf$/g;
+            const markdownRegex = /markdown-blog-phi\.vercel\.app\/posts\/(?<postId>[\w\d\-]+)$/g;
 
-            let articleName = 'unMatch';
+            const matchForPDf= pdfRegex.exec(fileName);
+            const matchForMarkdown = markdownRegex.exec(fileName);
 
-            if (newSiteMatchResult) {
-                articleName = newSiteMatchResult.groups.articleName;
-            }
+            const postId = matchForPDf?.groups?.postId || matchForMarkdown?.groups?.postId || "unMatch";
 
-            p['prettyPath'] = `/abouts/${articleName}`;
+            p['prettyPath'] = `/abouts/${postId}`;
         }
     }
 
