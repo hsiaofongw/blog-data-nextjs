@@ -6,6 +6,10 @@ const accessKeySecret = process.env?.ACCESS_KEY_SECRET || "unknowAccessKeySecret
 const bucket = process.env?.BUCKET_NAME || "unknowBucketName";
 
 export async function getFile(fileName: string): Promise<Buffer> {
+    console.log({
+        endpoint, accessKeyId, accessKeySecret, bucket
+    });
+
     const client = new OSS({
         endpoint, accessKeyId, accessKeySecret, bucket
     });
