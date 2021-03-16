@@ -10,6 +10,19 @@ async function headers() {
                 { key: "Access-Control-Allow-Headers", value: "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version" },
                 { key: "Cache-Control", value: "public,max-age=259200"}
             ]
+        },
+        {
+            source: "/api/pdfs/:fileName",
+            headers: [
+                {
+                    key: "Cache-Control",
+                    value: "public,max-age=259200"
+                },
+                {
+                    key: "Content-Type",
+                    value: "application/pdf"
+                }
+            ]
         }
     ]
 }
