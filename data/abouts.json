@@ -1,4 +1,17 @@
 [
+
+    {
+        "name": "自述",
+        "date": "2021-03-17",
+        "description": "如果你希望了解的话．",
+        "file": "https://markdown-blog-phi.vercel.app/posts/about-me"
+    },
+    {
+        "name": "友链交换事项",
+        "date": "2021-03-17",
+        "file": "https://markdown-blog-phi.vercel.app/posts/link-exchange-notes",
+        "description": "期待贵站看起来独特有个性．"
+    },
     {
         "name": "本站的基础设施以及及架构",
         "file": "https://markdown-blog-phi.vercel.app/posts/infrastructure-of-this-site",
@@ -10,11 +23,5 @@
         "date": "2021-01-18",
         "file": "https://blog-data-nextjs.vercel.app/api/pdfs/blog-renew-2021.pdf",
         "description": "这个博客迎来了新的精神面貌．"
-    },
-    {
-        "name": "联系方式",
-        "date": "2021-01-18",
-        "file": "https://blog-data-nextjs.vercel.app/api/pdfs/link-commit.pdf",
-        "description": "友链提交以及读者来信，注意是先链后友．"
     }
 ]
