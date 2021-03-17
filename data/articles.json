@@ -1,5 +1,11 @@
 [
     {
+        "name": "我是怎么为这个站点实现 Pretty URL 的",
+        "file": "https://markdown-blog-phi.vercel.app/posts/implement-pretty-url",
+        "description": "什么是 Pretty URL? 我又怎么为这个站点实现它．",
+        "date": "2021-03-17"
+    },
+    {
         "name": "一次服务器被入侵的经历",
         "file": "https://markdown-blog-phi.vercel.app/posts/measures-after-an-abuse-warning",
         "description": "开始关注安全",
