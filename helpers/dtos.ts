@@ -1,5 +1,6 @@
 import posts from '../data/articles.json';
 import abouts from '../data/abouts.json';
+import blogBasicMetaData from '../data/blog-basic-metadata.json';
 
 export async function getPosts(): Promise<IPostExcerptData[]> {
 
@@ -49,4 +50,8 @@ export async function getAbouts(): Promise<IPostExcerptData[]> {
     }
 
     return abouts;
+}
+
+export async function getBlogBasicMetaData(): Promise<IBlogBasicMetaData> {
+    return blogBasicMetaData;
 }
