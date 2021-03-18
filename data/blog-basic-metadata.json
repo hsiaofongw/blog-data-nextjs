@@ -20,12 +20,6 @@
             "newTab": true
         },
         {
-            "link": "/ca/",
-            "name": "自动机",
-            "newTab": false,
-            "experimental": true
-        },
-        {
             "link": "/abouts/",
             "name": "关于",
             "newTab": false
