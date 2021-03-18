@@ -29,11 +29,6 @@
             "link": "/abouts/",
             "name": "关于",
             "newTab": false
-        },
-        {
-            "link": "/comments",
-            "name": "留言",
-            "newTab": false
         }
     ]
 }
