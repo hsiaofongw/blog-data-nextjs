@@ -8,7 +8,7 @@
     {
         "name": "一次服务器被入侵的经历",
         "file": "https://markdown-blog-phi.vercel.app/posts/measures-after-an-abuse-warning",
-        "description": "开始关注安全",
+        "description": "开始关注安全．",
         "date": "2021-03-15"
     },
     {
@@ -27,55 +27,55 @@
         "name": "R软件绘图中文渲染解决方案",
         "file": "https://blog-data-nextjs.vercel.app/api/pdfs/r-cjk-font-rendering.pdf",
         "date": "2021-03-07",
-        "description": "列出了两种常见的R软件中文绘图解决方案，解决了R软件用在mac操作系统下绘图时中文字体不能正常显示的问题．"
+        "description": "解决 R 软件在 macOS 下中文字体不能正常显示的问题．"
     },
     {
         "name": "一个缓存配置案例",
         "date": "2021-03-05",
         "file": "https://blog-data-nextjs.vercel.app/api/pdfs/proxy-case-study-1.pdf",
-        "description": "通过一个NginX缓存配置案例分析缓存未能正常发挥作用的原因，介绍了RFC 7234，介绍了NginX缓存配置等．"
+        "description": "通过一个NginX缓存配置案例分析缓存未能正常发挥作用的原因．"
     },
     {
         "name": "用 Celery 实现多台设备的协同工作",
         "date": "2021-02-19",
         "file": "https://blog-data-nextjs.vercel.app/api/pdfs/celery-intro.pdf",
-        "description": "多台设备能发挥更大的作用，而 Celery 就是使多台设备能够协同工作的解决方案的其中的一种，而 Celery 是基于 Python 的，这一点使它用起来非常简单．"
+        "description": "用 Celery 使多台设备协同工作．"
     },
     {
         "name": "向量函数的导数：以神经网络的梯度下降方法为例",
         "date": "2021-02-07",
         "file": "https://blog-data-nextjs.vercel.app/api/pdfs/vector-valued-function.pdf",
-        "description": "我们先从数学的角度介绍了一元函数的导数，然后介绍了向量函数和雅克比矩阵，最后列举并且实现了一个神经网络的例子．"
+        "description": "向量函数和雅克比矩阵，以及神经网络．"
     },
     {
         "name": "主成分分析教程",
         "date": "2021-02-03",
         "file": "https://blog-data-nextjs.vercel.app/api/pdfs/pca-tutorial.pdf",
-        "description": "从线性代数的角度简单讲解主成分分析方法，使之变得容易理解和接受，文中亦有 NumPy 的实例．"
+        "description": "从线代的角度讲解主成分分析方法，使之变得容易理解和接受．"
     },
     {
         "name": "学习统计学习方法的思考与总结",
         "date": "2021-02-02",
         "file": "https://blog-data-nextjs.vercel.app/api/pdfs/statistical-learning-methods.pdf",
-        "description": "学习统计学习方法的一些简单总结和思考，提到了统计学习三要素、正则化、和常见的学习策略．"
+        "description": "总结和思考、统计学习三要素、正则化、和常见的学习策略．"
     },
     {
         "name": "三维物体在二维平面上的投影的计算",
         "date": "2021-01-30",
         "file": "https://blog-data-nextjs.vercel.app/api/pdfs/cube.pdf",
-        "description": "将一个三维物体的表面看做是多个三角形的组合，从一点出发经过 Canvas ，判断每一条光线是否穿过三角形．"
+        "description": "简单来说就是在平面上画出三维物体被看到的样子．"
     },
     {
         "name": "几个向量化计算的小技巧",
         "date": "2021-01-27",
         "file": "https://blog-data-nextjs.vercel.app/api/pdfs/vectorization-computing-intro.pdf",
-        "description": "向量化计算能大幅提升Flops，本文介绍几种简单的方法能快速应用到你现有的代码库中．"
+        "description": "向量化计算能大幅提升Flops，而且方法非常简单．"
     },
     {
         "name": "将多个矩阵方程的求解并行化",
         "date": "2021-01-27",
         "file": "https://blog-data-nextjs.vercel.app/api/pdfs/parallelization-of-solving-matrix-equations.pdf",
-        "description": "同时求解多个矩阵方程，充分利用已有算力，这样即使在没有 GPU 的条件下仍能实现很高的实际算力．"
+        "description": "重复利用已有的算力同时求解多个矩阵方程．"
     },
     {
         "name": "用 GPU 加速运行《生命游戏》",
@@ -87,7 +87,7 @@
         "name": "神经网络教程",
         "date": "2021-01-22",
         "file": "https://blog-data-nextjs.vercel.app/api/pdfs/neuralnet.pdf",
-        "description": "神经网络不过是多个向量函数的复合，梯度下降和误差逆传播其实就是复合函数的求导．"
+        "description": "梯度下降和误差逆传播其实就是复合函数的求导．"
     },
     {
         "name": "支持向量机的简单实现",
@@ -117,7 +117,7 @@
         "name": "并行化计算尝试",
         "date": "2021-01-12",
         "file": "https://blog-data-nextjs.vercel.app/api/pdfs/gpu-accel.pdf",
-        "description": "初探并行化计算，直观地感受它的加速效果，利用并行化方法来实现算力的更有效利用．"
+        "description": "直观地感受并行化计算的加速效果．"
     },
     {
         "name": "DP: 以 House Robber 问题为例",
@@ -177,7 +177,7 @@
         "file": "https://markdown-blog-phi.vercel.app/posts/linux-tools-recommendation-1",
         "name": "几个好用的 Linux 命令行工具推荐",
         "date": "2020-04-14",
-        "description": "一般都会发现Linux的命令行界面操作起来是非常高效和方便的．"
+        "description": "命令行界面操作起来往往是非常高效和方便的．"
     },
     {
         "file": "https://markdown-blog-phi.vercel.app/posts/sudoku-mathematical-formulation",
@@ -189,7 +189,7 @@
         "file": "https://markdown-blog-phi.vercel.app/posts/openssl-certificates",
         "name": "HTTPS证书：原理、签发、部署和验证",
         "date": "2020-04-08",
-        "description": "不管怎么说，你几乎找不到另外一种比HTTP应用得更广泛更流行的应用层协议．"
+        "description": "几乎找不到另外一种比HTTP应用得更广泛更流行的应用层协议．"
     },
     {
         "file": "https://markdown-blog-phi.vercel.app/posts/symlink-vs-harlink",
@@ -201,13 +201,13 @@
         "file": "https://markdown-blog-phi.vercel.app/posts/traceroute-introduction",
         "name": "traceroute介绍：原理和实验",
         "date": "2020-03-30",
-        "description": "在 Linux 系统中，系统管理员使用 traceroute（现在已被替换为 mtr ）命令来打印从本机发送到目标主机的数据包 (datagram) 所途经的中间节点的 IP 地址和延迟．"
+        "description": "traceroute 命令用来打印本机到目标主机之间的节点．"
     },
     {
         "file": "https://markdown-blog-phi.vercel.app/posts/cdn-deployment",
         "date": "2020-03-25",
         "name": "CDN部署过程全记录：原理和实践",
-        "description": "突然想尝试一下部署 CloudCone 的 CDN，于是就有了这篇文章．"
+        "description": "尝试部署了一下 CloudCone 的 CDN."
     },
     {
         "file": "https://markdown-blog-phi.vercel.app/posts/correct-time-in-cloudcone-vps",
@@ -218,7 +218,7 @@
     {
         "name": "Crontab 案例",
         "file": "https://markdown-blog-phi.vercel.app/posts/crontab-tutorial",
-        "description": "crontab呢其实就是Linux操作系统中用来设置定时任务的一个工具，通过crontab我们可以在Linux操作系统中设置定时任务，也就是可以使得特定的任务在特定的时间得以执行，而且是周期式的．",
+        "description": "crontab 用来设置定时任务",
         "date": "2020-03-16"
     }
 ]
