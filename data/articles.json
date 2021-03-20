@@ -30,7 +30,7 @@
         "description": "解决 R 在 macOS 下中文乱码问题．"
     },
     {
-        "name": "一个缓存配置案例",
+        "name": "缓存配置案例",
         "date": "2021-03-05",
         "file": "https://blog-data-nextjs.vercel.app/api/pdfs/proxy-case-study-1.pdf",
         "description": "通过一个案例分析缓存失效原因．"
@@ -42,10 +42,10 @@
         "description": "用 Celery 使多台设备协同工作．"
     },
     {
-        "name": "向量函数的导数：以神经网络的梯度下降方法为例",
+        "name": "向量函数的导数以及神经网络",
         "date": "2021-02-07",
         "file": "https://blog-data-nextjs.vercel.app/api/pdfs/vector-valued-function.pdf",
-        "description": "向量函数和雅克比矩阵，以及神经网络．"
+        "description": "向量函数和雅克比矩阵．"
     },
     {
         "name": "主成分分析教程",
@@ -54,13 +54,13 @@
         "description": "从线代角度讲解主成分分析．"
     },
     {
-        "name": "学习统计学习方法的思考与总结",
+        "name": "统计学习方法的学习总结",
         "date": "2021-02-02",
         "file": "https://blog-data-nextjs.vercel.app/api/pdfs/statistical-learning-methods.pdf",
         "description": "统计学习三要素、正则化以及常见学习策略．"
     },
     {
-        "name": "三维物体在二维平面上的投影的计算",
+        "name": "三维物体的投影计算",
         "date": "2021-01-30",
         "file": "https://blog-data-nextjs.vercel.app/api/pdfs/cube.pdf",
         "description": "画出三维物体被看到的样子．"
@@ -102,7 +102,7 @@
         "description": "利用奇异值分解技术实现更加准确的文本检索．"
     },
     {
-        "name": "用 CUDA 在 GPU 上实现遗传算法",
+        "name": "在 GPU 上实现遗传算法",
         "date": "2021-01-17",
         "file": "https://blog-data-nextjs.vercel.app/api/pdfs/gpu-tsp.pdf",
         "description": "同时演化每一个个体，在 GPU 中这不难做到．"
@@ -126,14 +126,14 @@
         "description": "动规就是计算结果的复用．"
     },
     {
-        "name": "解 Maximum Subarray 问题",
+        "name": "Maximum Subarray 问题",
         "date": "2020-08-23",
         "file": "https://markdown-blog-phi.vercel.app/posts/solving-maximum-subarray",
         "description": "不妨先转化之．"
     },
     {
         "file": "https://markdown-blog-phi.vercel.app/posts/merge-two-sorted-array",
-        "name": "合并两个已排序数组的几种方法",
+        "name": "合并两个已排序数组",
         "date": "2020-08-22",
         "description": "为一个简单的问题找到多种解法．"
     },
@@ -150,14 +150,14 @@
         "description": "原地操作就可以不用申请额外的内存了．"
     },
     {
-        "name": "生成所有可能的括号组合",
+        "name": "生成括号组合",
         "file": "https://markdown-blog-phi.vercel.app/posts/generate-parentheses-base-on-desicion-procedures",
         "date": "2020-08-14",
         "description": "可能是一种直观的解法．"
     },
     {
         "file": "https://markdown-blog-phi.vercel.app/posts/4sum-problem-branch-and-bound-solution",
-        "name": "4Sum 问题的分支定界求解思路及其实现",
+        "name": "4Sum 问题分支定界求解",
         "date": "2020-08-11",
         "description": "4Sum 问题和分支定界思想．"
     },
@@ -175,19 +175,19 @@
     },
     {
         "file": "https://markdown-blog-phi.vercel.app/posts/linux-tools-recommendation-1",
-        "name": "几个好用的 Linux 命令行工具推荐",
+        "name": "Linux 命令行工具推荐",
         "date": "2020-04-14",
         "description": "命令行界面操作起来是非常高效和方便的．"
     },
     {
         "file": "https://markdown-blog-phi.vercel.app/posts/sudoku-mathematical-formulation",
-        "name": "解数独与解方程？",
+        "name": "解数独与解方程",
         "date": "2020-04-13",
         "description": "解数独和解方程有什么关系？"
     },
     {
         "file": "https://markdown-blog-phi.vercel.app/posts/openssl-certificates",
-        "name": "HTTPS证书：原理、签发、部署和验证",
+        "name": "HTTPS证书：签发与验证",
         "date": "2020-04-08",
         "description": "几乎找不到另外一种比 HTTP 更广泛的协议．"
     },
@@ -199,19 +199,19 @@
     },
     {
         "file": "https://markdown-blog-phi.vercel.app/posts/traceroute-introduction",
-        "name": "traceroute介绍：原理和实验",
+        "name": "traceroute 介绍：原理和实验",
         "date": "2020-03-30",
         "description": "traceroute 命令用来打印本机到目标主机之间的节点．"
     },
     {
         "file": "https://markdown-blog-phi.vercel.app/posts/cdn-deployment",
         "date": "2020-03-25",
-        "name": "CDN部署过程全记录：原理和实践",
+        "name": "CDN 部署过程：原理和实践",
         "description": "尝试部署了一下 CloudCone 的 CDN."
     },
     {
         "file": "https://markdown-blog-phi.vercel.app/posts/correct-time-in-cloudcone-vps",
-        "name": "修复 CloudCone VPS 无法自动同步时间的问题",
+        "name": "修复 CloudCone VPS 时间同步问题",
         "date": "2020-03-18",
         "description": "一步步发现问题并且解决问题"
     },
