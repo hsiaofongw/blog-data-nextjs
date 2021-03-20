@@ -6,21 +6,21 @@
         "file": "https://markdown-blog-phi.vercel.app/posts/about-me"
     },
     {
-        "name": "友链交换事项",
+        "name": "友链交换",
         "date": "2021-03-17",
         "file": "https://markdown-blog-phi.vercel.app/posts/link-exchange-notes",
-        "description": "基本上是没太多要求的．"
+        "description": "没太多要求．"
     },
     {
-        "name": "本站的基础设施以及及架构",
+        "name": "本站基础设施与架构",
         "file": "https://markdown-blog-phi.vercel.app/posts/infrastructure-of-this-site",
-        "description": "升级到了 Next.js 之后的主要发展．",
+        "description": "升级到了 Next.js.",
         "date": "2021-03-15"
     },
     {
-        "name": "记一次升级",
+        "name": "一次升级",
         "date": "2021-01-18",
         "file": "https://blog-data-nextjs.vercel.app/api/pdfs/blog-renew-2021.pdf",
-        "description": "这个博客迎来了新的精神面貌．"
+        "description": "博客迎来了新的精神面貌．"
     }
 ]
