@@ -1,19 +1,19 @@
 [
     {
-        "name": "我是怎么为这个站点实现 Pretty URL 的",
+        "name": "实现 Pretty URL",
         "file": "https://markdown-blog-phi.vercel.app/posts/implement-pretty-url",
-        "description": "什么是 Pretty URL? 我又怎么为这个站点实现它．",
+        "description": "我为这个站点实现 Pretty URL．",
         "date": "2021-03-17"
     },
     {
-        "name": "一次服务器被入侵的经历",
+        "name": "服务器被入侵",
         "file": "https://markdown-blog-phi.vercel.app/posts/measures-after-an-abuse-warning",
-        "description": "开始关注安全．",
+        "description": "应对举措以及收获．",
         "date": "2021-03-15"
     },
     {
         "name": "用 Markdown 写作",
-        "description": "尝试也将 Markdown 加入写作方式．",
+        "description": "重拾 Markdown.",
         "date": "2021-03-13",
         "file": "https://markdown-blog-phi.vercel.app/posts/writing-in-markdown"
     },
@@ -21,19 +21,19 @@
         "name": "nginx -s stop",
         "file": "https://blog-data-nextjs.vercel.app/api/pdfs/nginx-stop.pdf",
         "date": "2021-03-10",
-        "description": "标志着本站及其围绕着的一切项目悉数顺利上云．"
+        "description": "博客架构升级改造．"
     },
     {
-        "name": "R软件绘图中文渲染解决方案",
+        "name": "R 软件 macOS 中文绘图",
         "file": "https://blog-data-nextjs.vercel.app/api/pdfs/r-cjk-font-rendering.pdf",
         "date": "2021-03-07",
-        "description": "解决 R 软件在 macOS 下中文字体不能正常显示的问题．"
+        "description": "解决 R 在 macOS 下中文乱码问题．"
     },
     {
         "name": "一个缓存配置案例",
         "date": "2021-03-05",
         "file": "https://blog-data-nextjs.vercel.app/api/pdfs/proxy-case-study-1.pdf",
-        "description": "通过一个NginX缓存配置案例分析缓存未能正常发挥作用的原因．"
+        "description": "通过一个案例分析缓存失效原因．"
     },
     {
         "name": "用 Celery 实现多台设备的协同工作",
@@ -51,25 +51,25 @@
         "name": "主成分分析教程",
         "date": "2021-02-03",
         "file": "https://blog-data-nextjs.vercel.app/api/pdfs/pca-tutorial.pdf",
-        "description": "从线代的角度讲解主成分分析方法，使之变得容易理解和接受．"
+        "description": "从线代角度讲解主成分分析．"
     },
     {
         "name": "学习统计学习方法的思考与总结",
         "date": "2021-02-02",
         "file": "https://blog-data-nextjs.vercel.app/api/pdfs/statistical-learning-methods.pdf",
-        "description": "总结和思考、统计学习三要素、正则化、和常见的学习策略．"
+        "description": "统计学习三要素、正则化以及常见学习策略．"
     },
     {
         "name": "三维物体在二维平面上的投影的计算",
         "date": "2021-01-30",
         "file": "https://blog-data-nextjs.vercel.app/api/pdfs/cube.pdf",
-        "description": "简单来说就是在平面上画出三维物体被看到的样子．"
+        "description": "画出三维物体被看到的样子．"
     },
     {
         "name": "几个向量化计算的小技巧",
         "date": "2021-01-27",
         "file": "https://blog-data-nextjs.vercel.app/api/pdfs/vectorization-computing-intro.pdf",
-        "description": "向量化计算能大幅提升Flops，而且方法非常简单．"
+        "description": "向量化计算能大幅提升Flops．"
     },
     {
         "name": "将多个矩阵方程的求解并行化",
@@ -81,7 +81,7 @@
         "name": "用 GPU 加速运行《生命游戏》",
         "date": "2021-01-23",
         "file": "https://blog-data-nextjs.vercel.app/api/pdfs/automata-cuda.pdf",
-        "description": "在 GPU 上实现元胞自动机的一个引例，注意到元胞自动机天然地适合并行化．"
+        "description": "在 GPU 上实现元胞自动机的一个例子．"
     },
     {
         "name": "神经网络教程",
@@ -93,7 +93,7 @@
         "name": "支持向量机的简单实现",
         "date": "2021-01-19",
         "file": "https://blog-data-nextjs.vercel.app/api/pdfs/svm-intro.pdf",
-        "description": "从线性分类器到核方法，支持向量机也可以很强大很优美．"
+        "description": "从线性分类器到核方法．"
     },
     {
         "name": "基于 LSA 的文本索引技术初探",
@@ -111,19 +111,19 @@
         "name": "SVD 方法应用于矩阵近似",
         "date": "2021-01-13",
         "file": "https://blog-data-nextjs.vercel.app/api/pdfs/svd-matrix-approximation.pdf",
-        "description": "帮助你更进一步理解奇异值分解技术，了解它的有趣应用之一．"
+        "description": "初步理解奇异值分解技术．"
     },
     {
         "name": "并行化计算尝试",
         "date": "2021-01-12",
         "file": "https://blog-data-nextjs.vercel.app/api/pdfs/gpu-accel.pdf",
-        "description": "直观地感受并行化计算的加速效果．"
+        "description": "直观感受并行化计算加速效果．"
     },
     {
         "name": "DP: 以 House Robber 问题为例",
         "date": "2020-08-30",
         "file": "https://markdown-blog-phi.vercel.app/posts/dynamic-programming-intro",
-        "description": "动规就是复用前面的计算结果．"
+        "description": "动规就是计算结果的复用．"
     },
     {
         "name": "解 Maximum Subarray 问题",
@@ -141,7 +141,7 @@
         "file": "https://markdown-blog-phi.vercel.app/posts/longest-common-prefix-n-ary-tree-solution",
         "name": "LCP 问题与数据结构",
         "date": "2020-08-18",
-        "description": "算法和数据结构之间也有着千丝万楼的关系．"
+        "description": "算法和数据结构之间千丝万楼的关系．"
     },
     {
         "name": "图片旋转问题",
@@ -177,7 +177,7 @@
         "file": "https://markdown-blog-phi.vercel.app/posts/linux-tools-recommendation-1",
         "name": "几个好用的 Linux 命令行工具推荐",
         "date": "2020-04-14",
-        "description": "命令行界面操作起来往往是非常高效和方便的．"
+        "description": "命令行界面操作起来是非常高效和方便的．"
     },
     {
         "file": "https://markdown-blog-phi.vercel.app/posts/sudoku-mathematical-formulation",
@@ -189,7 +189,7 @@
         "file": "https://markdown-blog-phi.vercel.app/posts/openssl-certificates",
         "name": "HTTPS证书：原理、签发、部署和验证",
         "date": "2020-04-08",
-        "description": "几乎找不到另外一种比HTTP应用得更广泛更流行的应用层协议．"
+        "description": "几乎找不到另外一种比 HTTP 更广泛的协议．"
     },
     {
         "file": "https://markdown-blog-phi.vercel.app/posts/symlink-vs-harlink",
