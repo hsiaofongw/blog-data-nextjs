@@ -201,7 +201,7 @@
         "file": "https://markdown-blog-phi.vercel.app/posts/traceroute-introduction",
         "name": "traceroute 介绍：原理和实验",
         "date": "2020-03-30",
-        "description": "traceroute 命令用来打印本机到目标主机之间的节点．"
+        "description": "打印本机到目标主机之间的节点．"
     },
     {
         "file": "https://markdown-blog-phi.vercel.app/posts/cdn-deployment",
