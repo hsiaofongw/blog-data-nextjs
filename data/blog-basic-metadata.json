@@ -20,6 +20,11 @@
             "newTab": true
         },
         {
+            "link": "/comments/",
+            "name": "评论",
+            "newTab": false
+        },
+        {
             "link": "/abouts/",
             "name": "关于",
             "newTab": false
