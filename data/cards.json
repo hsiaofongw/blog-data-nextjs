@@ -76,7 +76,7 @@
     },
     {
         "link": "https://blog.skihome.xyz/",
-        "avatar":"https://blog.skihome.xyz/uploads/avatar.jpg",
+        "avatar": "https://blog.skihome.xyz/uploads/avatar.jpg",
         "description": "我已经无敌了！",
         "title": "Sakitami的集装箱",
         "addDate": "2020-04-16",
@@ -157,7 +157,9 @@
     {
         "title": "皮皮凛の小窝",
         "link": "https://owomoe.net/",
-        "previousLinks": ["https://qwq.best/"],
+        "previousLinks": [
+            "https://qwq.best/"
+        ],
         "avatar": "https://cdn.jsdelivr.net/gh/AyagawaSeirin/Assets/img/logo.jpg",
         "description": "永远相信美好的事情即将发生~",
         "addDate": "2020-04-28",
@@ -428,6 +430,13 @@
         "link": "https://rain.moimo.me",
         "avatar": "https://i.loli.net/2020/03/08/VRT2zfWZiLrUJPX.jpg",
         "addDate": "2021-03-19",
+        "dateVerified": true
+    },
+    {
+        "title": "静かな森",
+        "description": "致虚极，守静笃。",
+        "avatar": "https://cdn.innei.ren/avatar.png",
+        "addDate": "2021-03-23",
         "dateVerified": true
     }
 ]
