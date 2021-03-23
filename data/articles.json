@@ -1,11 +1,5 @@
 [
     {
-        "name": "订阅",
-        "file": "https://markdown-blog-phi.vercel.app/posts/rss-subscribe",
-        "date": "2021-03-23",
-        "description": "RSS 订阅，现已支持．"
-    },
-    {
         "name": "拥抱 tailwindcss",
         "file": "https://markdown-blog-phi.vercel.app/posts/welcome-tailwindcss",
         "date": "2021-03-22",

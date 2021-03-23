@@ -1,5 +1,11 @@
 [
     {
+        "name": "订阅",
+        "file": "https://markdown-blog-phi.vercel.app/posts/rss-subscribe",
+        "date": "2021-03-23",
+        "description": "RSS 订阅，现已支持．"
+    },
+    {
         "name": "自述",
         "date": "2021-03-17",
         "description": "如果你希望了解的话．",
