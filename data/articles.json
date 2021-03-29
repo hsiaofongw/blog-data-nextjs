@@ -1,5 +1,11 @@
 [
     {
+        "name": "推荐系统初探（二）",
+        "description": "进行推荐并且评估模型的性能",
+        "date": "2021-03-28",
+        "file": "https://markdown-blog-phi.vercel.app/posts/recommender-system-2"
+    },
+    {
         "name": "推荐系统初探（一）",
         "description": "找出前 n 个最相近的用户",
         "date": "2021-03-28",
