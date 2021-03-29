@@ -21,10 +21,6 @@ async function headers() {
                 {
                     key: "Content-Type",
                     value: "application/pdf"
-                },
-                {
-                    key: "x-debug-info-next-config",
-                    value: "next.config.js is effected."
                 }
             ]
         }
