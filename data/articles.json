@@ -1,7 +1,7 @@
 [
     {
-        "name": "找出前 n 个最相近的用户",
-        "description": "推荐系统初探",
+        "name": "推荐系统初探（一）",
+        "description": "找出前 n 个最相近的用户",
         "date": "2021-03-28",
         "file": "https://markdown-blog-phi.vercel.app/posts/recommender-system-1"
     },
