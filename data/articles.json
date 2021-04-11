@@ -1,13 +1,19 @@
 [
     {
+        "name": "使用贝叶斯方法进行推断",
+        "file": "https://blog-data-nextjs.vercel.app/api/pdfs/bayesian-demo-1.pdf",
+        "date": "2021-03-10",
+        "description": "学习和理解朴素贝叶斯方法．"
+    },
+    {
         "name": "推荐系统初探（二）",
-        "description": "进行推荐并且评估模型的性能",
+        "description": "进行推荐并且评估模型的性能．",
         "date": "2021-03-29",
         "file": "https://markdown-blog-phi.vercel.app/posts/recommender-system-2"
     },
     {
         "name": "推荐系统初探（一）",
-        "description": "找出前 n 个最相近的用户",
+        "description": "找出前 n 个最相近的用户．",
         "date": "2021-03-28",
         "file": "https://markdown-blog-phi.vercel.app/posts/recommender-system-1"
     },
@@ -20,7 +26,7 @@
     {
         "name": "实现 Pretty URL",
         "file": "https://markdown-blog-phi.vercel.app/posts/implement-pretty-url",
-        "description": "我为这个站点实现 Pretty URL．",
+        "description": "我为这个站点实现 Pretty URL.",
         "date": "2021-03-17"
     },
     {
