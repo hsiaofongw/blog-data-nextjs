@@ -1,5 +1,11 @@
 [
     {
+        "name": "Git 原理",
+        "file": "https://markdown-blog-phi.vercel.app/posts/git-internals",
+        "date": "2021-05-18",
+        "description": "一切皆 objects."
+    },
+    {
         "name": "使用贝叶斯方法进行推断",
         "file": "https://blog-data-nextjs.vercel.app/api/pdfs/bayesian-demo-1.pdf",
         "date": "2021-03-10",
