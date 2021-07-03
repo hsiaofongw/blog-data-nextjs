@@ -1,5 +1,11 @@
 [
     {
+        "name": "在 Angular 项目中实现 Data Mocking 的几种方式",
+        "file": "https://blog-data-nextjs.vercel.app/api/pdfs/serveral-data-mocking-methods-in-angular.pdf",
+        "date": "2021-07-03",
+        "description": "用好依赖注入"
+    },
+    {
         "name": "求两个偏序集的最大交集",
         "file": "https://blog-data-nextjs.vercel.app/api/pdfs/posets-1.pdf",
         "date": "2021-05-22",
