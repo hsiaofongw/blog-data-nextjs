@@ -1,5 +1,11 @@
 [
     {
+        "name": "使用装饰器来模拟请求延迟和请求进度更新",
+        "file": "https://blog-data-nextjs.vercel.app/api/pdfs/decorator-in-angular.pdf",
+        "date": "2021-08-28",
+        "description": "通过装饰器来提高代码复用能力"
+    },
+    {
         "name": "在 Angular 项目中实现 Data Mocking 的几种方式",
         "file": "https://blog-data-nextjs.vercel.app/api/pdfs/serveral-data-mocking-methods-in-angular.pdf",
         "date": "2021-07-03",
